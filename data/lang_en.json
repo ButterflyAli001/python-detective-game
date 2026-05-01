@@ -1,0 +1,81 @@
+{
+  "names": [
+    "John", "Michael", "David", "James", "Robert",
+    "Emily", "Sarah", "Jessica", "Emma", "Olivia"
+  ],
+  "locations": [
+    "Drawing Room", "Kitchen", "Back Garden", "Garage", "Library",
+    "Study", "Master Bedroom", "Dark Corridor", "Cellar", "Front Porch"
+  ],
+  "weapons": [
+    "Kitchen Knife", "Wooden Club", "Rope", "Rat Poison", "Blunt Object",
+    "Large Scissors", "Brick", "Wrench", "Bronze Candlestick", "Iron Statue"
+  ],
+  "clue_templates": {
+    "valid": [
+      "A {weapon} was found bearing {killer}'s fingerprints.",
+      "Footprints lead from {location} directly to {killer}'s hiding spot.",
+      "A witness saw {killer} fleeing from {location} on the night of the crime.",
+      "Blood stains were discovered on {killer}'s clothing.",
+      "CCTV footage shows {killer} carrying a {weapon}.",
+      "{killer} has no alibi for the time of the incident at {location}.",
+      "{killer}'s phone number appears in the victim's last call log."
+    ],
+    "noise": [
+      "A cigarette butt belonging to {suspect} was found near {location}.",
+      "{suspect} appeared visibly nervous during questioning.",
+      "{suspect} was involved in an argument with the victim last week.",
+      "A neighbour spotted {suspect} leaving late at night.",
+      "A note with {suspect}'s name was found in the victim's pocket.",
+      "{suspect} had a financial motive against the victim.",
+      "{suspect}'s bag was discovered near {location}."
+    ]
+  },
+  "witness_templates": {
+    "accurate": [
+      "I am certain I saw {killer} near {location} that night. They looked extremely agitated.",
+      "I heard a loud noise from {location}, then saw {killer} leave in a hurry.",
+      "Something was off about {killer} — they avoided eye contact throughout questioning."
+    ],
+    "misleading": [
+      "If you ask me, {red_herring} is the most suspicious one. Very strange behaviour.",
+      "I believe {red_herring} did it — they had a long-standing grudge against the victim.",
+      "Last night I saw {red_herring} pacing around {location}."
+    ],
+    "vague": [
+      "I am not certain, but it seemed like someone was at {location} that evening.",
+      "I heard something, but I couldn't make out who was responsible.",
+      "The atmosphere felt suspicious, but I didn't dare go out to check."
+    ]
+  },
+  "ui": {
+    "title": "DETECTIVE GAME BY BUTTERFLYALI001",
+    "subtitle": "A Logic-Based Detective Game",
+    "menu_title": "=== INVESTIGATION MENU ===",
+    "menu_items": [
+      "Visit Crime Scene (Get Clues)",
+      "Interview Witness",
+      "View Suspect List",
+      "Arrest a Suspect",
+      "Quit"
+    ],
+    "case_intro": "=== NEW CASE ===",
+    "case_detail": "The victim was found dead in the {location}. Weapon used: {weapon}.\nYou have {suspect_count} suspects. Find the culprit!",
+    "clue_header": "=== CRIME SCENE CLUES ===",
+    "witness_header": "=== WITNESS STATEMENT ===",
+    "suspect_header": "=== SUSPECT LIST ===",
+    "arrest_header": "=== ARREST ===",
+    "arrest_prompt": "Who do you want to arrest? (enter number): ",
+    "arrest_confirm": "You are arresting {suspect}...",
+    "win_message": "\nCONGRATULATIONS! You have solved the case!\n{killer} was indeed the culprit. Justice is served!\nYour Score: {score} points",
+    "lose_message": "\nGAME OVER! You arrested the wrong person!\n{suspect} was innocent. The real killer ({killer}) has escaped!",
+    "already_visited": "You have already visited the crime scene. No new clues.",
+    "already_met_witness": "You have already interviewed all witnesses.",
+    "no_suspects": "There are no suspects to choose from.",
+    "invalid_choice": "Invalid choice. Please try again.",
+    "clues_found": "Clue {current}/{total} discovered.",
+    "score_info": "Score: {score} | Clues: {clues}/{max_clues} | Witnesses: {witnesses}/{max_witnesses}",
+    "lang_select": "Pilih bahasa / Select language:\n1. Indonesia\n2. English\n> ",
+    "exit_message": "Thank you for playing. Farewell, Detective!"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "names": [
+    "Budi", "Andi", "Dedi", "Rudi", "Agus",
+    "Siti", "Dewi", "Putri", "Sri", "Rina"
+  ],
+  "locations": [
+    "Ruang Tamu", "Dapur", "Taman Belakang", "Garasi", "Perpustakaan",
+    "Ruang Kerja", "Kamar Tidur", "Lorong Gelap", "Gudang", "Beranda Depan"
+  ],
+  "weapons": [
+    "Pisau Dapur", "Tongkat Kayu", "Tali Tambang", "Racun Tikus", "Benda Tumpul",
+    "Gunting Besar", "Batu Bata", "Kunci Inggris", "Lilin Perunggu", "Patung Besi"
+  ],
+  "clue_templates": {
+    "valid": [
+      "Ditemukan {weapon} dengan sidik jari {killer}.",
+      "Jejak kaki mengarah dari {location} ke tempat persembunyian {killer}.",
+      "Saksi melihat {killer} berlari dari {location} malam kejadian.",
+      "Noda darah ditemukan di pakaian {killer}.",
+      "Rekaman CCTV menunjukkan {killer} membawa {weapon}.",
+      "{killer} tidak memiliki alibi saat kejadian di {location}.",
+      "Nomor telepon {killer} ada di daftar panggilan terakhir korban."
+    ],
+    "noise": [
+      "Ditemukan rokok bekas milik {suspect} dekat {location}.",
+      "{suspect} terlihat gugup saat diinterogasi.",
+      "{suspect} pernah bertengkar dengan korban minggu lalu.",
+      "Tetangga melihat {suspect} keluar larut malam.",
+      "Ditemukan catatan dengan nama {suspect} di saku korban.",
+      "{suspect} memiliki motif keuangan terhadap korban.",
+      "Tas milik {suspect} ditemukan di dekat {location}."
+    ]
+  },
+  "witness_templates": {
+    "accurate": [
+      "Saya yakin melihat {killer} di dekat {location} malam itu. Dia terlihat sangat gelisah.",
+      "Saya dengar suara keras dari {location}, lalu melihat {killer} pergi terburu-buru.",
+      "Ada sesuatu yang aneh dari {killer}, dia menghindari kontak mata saat ditanya."
+    ],
+    "misleading": [
+      "Kalau menurut saya, {red_herring} yang paling mencurigakan. Dia aneh sekali.",
+      "Saya rasa {red_herring} yang melakukannya, dia punya dendam lama dengan korban.",
+      "Semalam saya melihat {red_herring} mondar-mandir di sekitar {location}."
+    ],
+    "vague": [
+      "Saya tidak yakin, tapi sepertinya ada seseorang di {location} malam itu.",
+      "Saya dengar sesuatu, tapi tidak tahu siapa pelakunya.",
+      "Suasananya mencurigakan, tapi saya tidak berani keluar untuk melihat."
+    ]
+  },
+  "ui": {
+    "title": "DETEKTIF GAME OLEH BUTTERFLYALI001",
+    "subtitle": "Game Detektif Berbasis Logika",
+    "menu_title": "=== MENU INVESTIGASI ===",
+    "menu_items": [
+      "Pergi ke TKP (Lihat Petunjuk)",
+      "Temui Saksi",
+      "Lihat Daftar Tersangka",
+      "Tangkap Tersangka",
+      "Keluar"
+    ],
+    "case_intro": "=== KASUS BARU ===",
+    "case_detail": "Korban ditemukan tewas di {location}. Senjata yang digunakan: {weapon}.\nAnda memiliki {suspect_count} tersangka. Temukan siapa pelakunya!",
+    "clue_header": "=== PETUNJUK DI TKP ===",
+    "witness_header": "=== PERNYATAAN SAKSI ===",
+    "suspect_header": "=== DAFTAR TERSANGKA ===",
+    "arrest_header": "=== PENANGKAPAN ===",
+    "arrest_prompt": "Siapa yang ingin Anda tangkap? (masukkan nomor): ",
+    "arrest_confirm": "Anda menangkap {suspect}...",
+    "win_message": "\nSELAMAT! Anda berhasil memecahkan kasus!\nPelakunya memang {killer}. Keadilan ditegakkan!\nSkor Anda: {score} poin",
+    "lose_message": "\nGAME OVER! Anda menangkap orang yang salah!\n{suspect} bukan pelakunya. Pelaku sebenarnya ({killer}) berhasil kabur!",
+    "already_visited": "Anda sudah mengunjungi TKP. Tidak ada petunjuk baru.",
+    "already_met_witness": "Anda sudah menemui semua saksi.",
+    "no_suspects": "Tidak ada tersangka yang bisa dipilih.",
+    "invalid_choice": "Pilihan tidak valid. Coba lagi.",
+    "clues_found": "Petunjuk {current}/{total} ditemukan.",
+    "score_info": "Skor: {score} | Petunjuk: {clues}/{max_clues} | Saksi: {witnesses}/{max_witnesses}",
+    "lang_select": "Pilih bahasa / Select language:\n1. Indonesia\n2. English\n> ",
+    "exit_message": "Terima kasih telah bermain. Sampai jumpa, Detektif!"
+  }
+}
