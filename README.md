@@ -20,14 +20,14 @@ No external dependencies. Python 3.8+ only.
 
 ```
 detective_game/
-├── main.py          # Entry point
-├── game.py          # Game loop & all UI rendering
-├── generator.py     # Procedural case generator
-├── state.py         # Player progress tracker
-├── utils.py         # JSON loader, randomizer, formatter
-└── data/
-    ├── lang_id.json # Indonesian language data & templates
-    └── lang_en.json # English language data & templates
+> main.py
+> game.py
+> generator.py
+> state.py
+> utils.py
+> data/
+>    > lang_id.json
+>    > lang_en.json
 ```
 
 ---
