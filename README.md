@@ -1,11 +1,11 @@
-# 🔍 Detective Game — CLI Python
+# Detective Game — CLI Python
 
 Game detektif berbasis teks dengan kasus prosedural acak.  
 A text-based detective game with fully randomized procedural cases.
 
 ---
 
-## 🚀 Cara Menjalankan / How to Run
+## Cara Menjalankan / How to Run
 
 ```bash
 python main.py
@@ -16,7 +16,7 @@ No external dependencies. Python 3.8+ only.
 
 ---
 
-## 📁 Struktur Proyek / Project Structure
+## Struktur Proyek / Project Structure
 
 ```
 detective_game/
@@ -32,7 +32,7 @@ detective_game/
 
 ---
 
-## 🎮 Cara Bermain / Gameplay
+## Cara Bermain / Gameplay
 
 1. Pilih bahasa (Indonesia / English)
 2. Baca detail kasus yang muncul
@@ -44,11 +44,11 @@ detective_game/
    - **5** → Keluar
 4. Kumpulkan petunjuk, deduksi siapa pelakunya, lalu tangkap!
 
-> ⚠️ **Perhatian**: Saksi tidak selalu berkata jujur. Noise clue bisa menyesatkan!
+> **Perhatian**: Saksi tidak selalu berkata jujur. Noise clue bisa menyesatkan!
 
 ---
 
-## 🏆 Sistem Skor / Scoring
+## Sistem Skor / Scoring
 
 | Aksi              | Efek Skor |
 |-------------------|-----------|
@@ -59,14 +59,14 @@ detective_game/
 
 ---
 
-## 🌐 Menambah Bahasa / Adding a Language
+## Menambah Bahasa / Adding a Language
 
 Buat file `data/lang_XX.json` dengan struktur yang sama seperti `lang_id.json`.  
 Lalu tambahkan opsi di `game.py → select_language()`.
 
 ---
 
-## 🔧 Menambah Konten / Adding Content
+## Menambah Konten / Adding Content
 
 Semua data game ada di `data/lang_id.json` dan `data/lang_en.json`:
 - **`names`** → daftar nama tersangka
@@ -75,3 +75,5 @@ Semua data game ada di `data/lang_id.json` dan `data/lang_en.json`:
 - **`clue_templates.valid`** → petunjuk yang mengarah ke pelaku
 - **`clue_templates.noise`** → petunjuk pengalih
 - **`witness_templates`** → pernyataan saksi (accurate / misleading / vague)
+
+## Note: Nama, tempat, kejadian, atau semacamnya hanyalah fiktif belaka tanpa maksud tertentu.
